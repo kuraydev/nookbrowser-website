@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1780 1160" width="1780" height="1160" role="img" aria-label="Hover preview thumbnail over a background tab">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D1E"/>
+      <stop offset="1" stop-color="#1A0F3A"/>
+    </linearGradient>
+    <radialGradient id="bloomP" cx="0.1" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF5188" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#FF5188" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="thumb1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1DB954"/>
+      <stop offset="1" stop-color="#0A5F31"/>
+    </linearGradient>
+  </defs>
+  <rect width="1780" height="1160" fill="url(#bg)"/>
+  <rect width="1780" height="1160" fill="url(#bloomP)"/>
+
+  <g transform="translate(60, 60)">
+    <rect width="1660" height="1040" rx="18" fill="#0E1124"/>
+    <rect x="0" y="0" width="260" height="1040" rx="18" fill="rgba(255,255,255,0.025)"/>
+
+    <!-- Traffic lights -->
+    <circle cx="28" cy="28" r="6.5" fill="#ff5f57"/>
+    <circle cx="50" cy="28" r="6.5" fill="#febc2e"/>
+    <circle cx="72" cy="28" r="6.5" fill="#28c840"/>
+
+    <!-- Active site content (faint to let preview shine) -->
+    <g transform="translate(280, 24)" opacity="0.4">
+      <rect width="1360" height="40" rx="10" fill="rgba(255,255,255,0.03)"/>
+      <rect x="110" y="8" width="820" height="24" rx="12" fill="rgba(255,255,255,0.06)"/>
+      <text x="130" y="24" fill="rgba(255,255,255,0.6)" font-family="-apple-system,SF Pro Text" font-size="12">🔒 https://claude.ai</text>
+    </g>
+    <g transform="translate(280, 80)" opacity="0.35">
+      <rect width="1360" height="930" rx="14" fill="rgba(255,255,255,0.04)"/>
+      <rect x="40"  y="40" width="1000" height="16" rx="5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="40"  y="78" width="1200" height="10" rx="4" fill="rgba(255,255,255,0.06)"/>
+      <rect x="40" y="108" width="900"  height="10" rx="4" fill="rgba(255,255,255,0.06)"/>
+    </g>
+
+    <!-- Sidebar tabs with "hover" on Spotify row -->
+    <g transform="translate(16, 100)" font-family="-apple-system,SF Pro Text" font-size="13">
+      <g><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#FF0000"/><text x="34" y="20" fill="rgba(255,255,255,0.7)">YouTube</text></g>
+      <g transform="translate(0, 34)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#5865F2"/><text x="34" y="20" fill="rgba(255,255,255,0.7)">Discord</text></g>
+      <!-- hovered -->
+      <g transform="translate(0, 68)">
+        <rect width="228" height="30" rx="9" fill="rgba(255,255,255,0.05)"/>
+        <rect x="10" y="8" width="14" height="14" rx="3" fill="#1DB954"/>
+        <text x="34" y="20" fill="#fff" font-weight="600">Spotify — Focus</text>
+        <!-- bottom audio strip -->
+        <g transform="translate(8, 25)">
+          <rect width="212" height="3" rx="1.5" fill="rgba(255,81,136,0.4)"/>
+        </g>
+      </g>
+      <g transform="translate(0, 102)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#24292F"/><text x="34" y="20" fill="rgba(255,255,255,0.7)">GitHub</text></g>
+      <g transform="translate(0, 136)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#F29111"/><text x="34" y="20" fill="rgba(255,255,255,0.7)">Hacker News</text></g>
+      <g transform="translate(0, 170)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#4D4D4D"/><text x="34" y="20" fill="rgba(255,255,255,0.7)">Gmail</text></g>
+    </g>
+
+    <!-- Hover preview card -->
+    <g transform="translate(260, 130)">
+      <rect x="-4" y="-4" width="288" height="250" rx="16" fill="#18133A" opacity="0.9"/>
+      <rect x="-4" y="-4" width="288" height="250" rx="16" fill="none" stroke="rgba(255,255,255,0.14)"/>
+      <!-- thumbnail -->
+      <rect x="0" y="0" width="280" height="178" fill="url(#thumb1)"/>
+      <g transform="translate(60, 48)" fill="white">
+        <circle cx="80" cy="40" r="30" fill="rgba(0,0,0,0.4)"/>
+        <path d="M70 26 L70 54 L95 40 Z" fill="white"/>
+        <text x="0" y="100" font-family="-apple-system,SF Pro Display" font-size="18" font-weight="700">Focus — Lo-Fi</text>
+        <text x="0" y="118" font-family="-apple-system,SF Pro Text" font-size="11" fill="rgba(255,255,255,0.75)">Spotify · 1.2M likes</text>
+      </g>
+      <!-- metadata -->
+      <g transform="translate(12, 194)" font-family="-apple-system,SF Pro Text">
+        <rect x="0" y="0" width="16" height="16" rx="4" fill="#1DB954"/>
+        <text x="24" y="12" fill="#fff" font-size="12" font-weight="600">Spotify — Focus</text>
+        <text x="0" y="34" fill="rgba(255,255,255,0.5)" font-size="10.5" font-family="SF Mono,Menlo,monospace">open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ</text>
+      </g>
+    </g>
+
+    <!-- Pointer / cursor indicator -->
+    <g transform="translate(200, 192)" opacity="0.8">
+      <circle cx="0" cy="0" r="14" fill="rgba(255,81,136,0.2)"/>
+      <circle cx="0" cy="0" r="4" fill="#FF5188"/>
+    </g>
+  </g>
+</svg>

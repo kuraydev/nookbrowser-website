@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1780 1160" width="1780" height="1160" role="img" aria-label="Nook browser home view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D1E"/>
+      <stop offset="0.55" stop-color="#120F2E"/>
+      <stop offset="1" stop-color="#1A0F3A"/>
+    </linearGradient>
+    <radialGradient id="bloom1" cx="0.02" cy="0" r="0.8">
+      <stop offset="0" stop-color="#FF5188" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FF5188" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bloom2" cx="1.1" cy="1.1" r="0.8">
+      <stop offset="0" stop-color="#3A9EFF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#3A9EFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5188"/>
+      <stop offset="0.5" stop-color="#C75CEB"/>
+      <stop offset="1" stop-color="#3A9EFF"/>
+    </linearGradient>
+    <linearGradient id="pillFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF5188" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FF5188" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+  <rect width="1780" height="1160" fill="url(#bg)"/>
+  <rect width="1780" height="1160" fill="url(#bloom1)"/>
+  <rect width="1780" height="1160" fill="url(#bloom2)"/>
+  <rect width="1780" height="1160" filter="url(#noise)" opacity="0.5"/>
+
+  <!-- App window frame (rounded inset) -->
+  <g transform="translate(60,60)">
+    <rect x="0" y="0" width="1660" height="1040" rx="18" fill="#0E1124" opacity="0.72"/>
+    <rect x="0" y="0" width="1660" height="1040" rx="18" fill="none" stroke="rgba(255,255,255,0.08)"/>
+
+    <!-- Sidebar -->
+    <rect x="0" y="0" width="260" height="1040" rx="18" fill="rgba(255,255,255,0.025)"/>
+    <!-- Traffic lights -->
+    <circle cx="28" cy="28" r="6.5" fill="#ff5f57"/>
+    <circle cx="50" cy="28" r="6.5" fill="#febc2e"/>
+    <circle cx="72" cy="28" r="6.5" fill="#28c840"/>
+    <!-- Sidebar icons row (toolbar) -->
+    <g transform="translate(104, 24)" fill="rgba(255,255,255,0.45)">
+      <rect x="0" y="0" width="22" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="26" y="0" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M50 2 L46 8 L50 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M56 2 L60 8 L56 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- New tab button -->
+    <g transform="translate(16, 72)">
+      <rect x="0" y="0" width="228" height="34" rx="10" fill="rgba(255,255,255,0.04)"/>
+      <g transform="translate(14, 10)" fill="rgba(255,255,255,0.55)">
+        <path d="M0 7 L14 7 M7 0 L7 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <text x="40" y="22" fill="rgba(255,255,255,0.55)" font-family="-apple-system,SF Pro Text,system-ui" font-size="13">New tab</text>
+      <rect x="188" y="8" width="28" height="18" rx="5" fill="rgba(255,255,255,0.08)"/>
+      <text x="202" y="21" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="SF Mono,Menlo,monospace" font-size="10">⌘T</text>
+    </g>
+
+    <!-- Pinned tiles -->
+    <text x="22" y="130" fill="rgba(255,255,255,0.4)" font-family="-apple-system,system-ui" font-size="10" font-weight="600" letter-spacing="1.4">PINNED</text>
+    <g transform="translate(16, 138)">
+      <g transform="translate(0,0)">
+        <rect x="0" y="0" width="50" height="50" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+        <rect x="17" y="17" width="16" height="16" rx="4" fill="#FF0000"/>
+        <polygon points="22,22 32,25 22,28" fill="white"/>
+      </g>
+      <g transform="translate(58,0)">
+        <rect x="0" y="0" width="50" height="50" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+        <circle cx="25" cy="25" r="9" fill="#4285F4"/>
+        <text x="25" y="30" text-anchor="middle" fill="white" font-family="-apple-system,system-ui" font-size="11" font-weight="700">G</text>
+      </g>
+      <g transform="translate(116,0)">
+        <rect x="0" y="0" width="50" height="50" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+        <rect x="17" y="17" width="16" height="16" rx="4" fill="#000"/>
+        <text x="25" y="29" text-anchor="middle" fill="white" font-family="-apple-system,system-ui" font-size="11" font-weight="700">X</text>
+      </g>
+      <g transform="translate(174,0)">
+        <rect x="0" y="0" width="50" height="50" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+        <circle cx="25" cy="25" r="9" fill="#FF5188"/>
+        <path d="M20 25h10M25 20v10" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Tab list -->
+    <text x="22" y="228" fill="rgba(255,255,255,0.4)" font-family="-apple-system,system-ui" font-size="10" font-weight="600" letter-spacing="1.4">TABS</text>
+    <g transform="translate(16, 240)" font-family="-apple-system,SF Pro Text,system-ui">
+      <!-- active tab -->
+      <rect x="0" y="0" width="228" height="34" rx="10" fill="url(#pillFill)"/>
+      <rect x="0" y="0" width="228" height="34" rx="10" fill="none" stroke="rgba(255,255,255,0.1)"/>
+      <rect x="10" y="10" width="14" height="14" rx="3" fill="#FF0000"/>
+      <text x="34" y="22" fill="#ffffff" font-size="13" font-weight="600">YouTube — Led Zeppelin</text>
+
+      <g transform="translate(0,40)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#5865F2"/><text x="34" y="20" fill="rgba(255,255,255,0.7)" font-size="13">Discord</text></g>
+      <g transform="translate(0,74)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#1DB954"/><text x="34" y="20" fill="rgba(255,255,255,0.7)" font-size="13">Spotify — Focus</text></g>
+      <g transform="translate(0,108)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#24292F"/><text x="34" y="20" fill="rgba(255,255,255,0.7)" font-size="13">GitHub · kuraydev/nook</text></g>
+      <g transform="translate(0,142)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#F29111"/><text x="34" y="20" fill="rgba(255,255,255,0.7)" font-size="13">Hacker News</text></g>
+      <g transform="translate(0,176)"><rect width="228" height="30" rx="9" fill="transparent"/><rect x="10" y="8" width="14" height="14" rx="3" fill="#4D4D4D"/><text x="34" y="20" fill="rgba(255,255,255,0.7)" font-size="13">Gmail — Inbox (3)</text></g>
+    </g>
+
+    <!-- Space pill dock -->
+    <line x1="16" y1="960" x2="244" y2="960" stroke="rgba(255,255,255,0.08)"/>
+    <g transform="translate(16, 972)">
+      <rect x="0" y="0" width="36" height="36" rx="10" fill="rgba(255,81,136,0.18)" stroke="rgba(255,81,136,0.5)"/>
+      <text x="18" y="24" text-anchor="middle" font-family="-apple-system,system-ui" font-size="16">🏠</text>
+      <rect x="4" y="38" width="28" height="3" rx="1.5" fill="#FF5188"/>
+
+      <rect x="44" y="0" width="36" height="36" rx="10" fill="rgba(58,158,255,0.14)" stroke="rgba(58,158,255,0.3)"/>
+      <text x="62" y="24" text-anchor="middle" font-family="-apple-system,system-ui" font-size="16">💼</text>
+      <rect x="88" y="0" width="36" height="36" rx="10" fill="rgba(74,222,128,0.14)" stroke="rgba(74,222,128,0.3)"/>
+      <text x="106" y="24" text-anchor="middle" font-family="-apple-system,system-ui" font-size="16">🧠</text>
+      <rect x="132" y="0" width="36" height="36" rx="10" fill="rgba(199,92,235,0.14)" stroke="rgba(199,92,235,0.3)"/>
+      <text x="150" y="24" text-anchor="middle" font-family="-apple-system,system-ui" font-size="16">🎨</text>
+      <rect x="176" y="0" width="36" height="36" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)"/>
+      <path d="M188 18 L208 18 M198 8 L198 28" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Content area (page) -->
+    <g transform="translate(280, 24)">
+      <rect x="0" y="0" width="1360" height="40" rx="10" fill="rgba(255,255,255,0.03)"/>
+      <circle cx="20" cy="20" r="10" fill="rgba(255,255,255,0.06)"/>
+      <circle cx="48" cy="20" r="10" fill="rgba(255,255,255,0.06)"/>
+      <circle cx="76" cy="20" r="10" fill="rgba(255,255,255,0.06)"/>
+      <rect x="110" y="8" width="820" height="24" rx="12" fill="rgba(255,255,255,0.06)"/>
+      <text x="130" y="24" fill="rgba(255,255,255,0.6)" font-family="-apple-system,SF Pro Text" font-size="12">🔒 https://www.youtube.com/watch?v=BL-W1tw7n4U</text>
+      <g transform="translate(960, 8)">
+        <rect x="0" y="0" width="86" height="24" rx="12" fill="rgba(74,222,128,0.12)" stroke="rgba(74,222,128,0.35)"/>
+        <circle cx="14" cy="12" r="5" fill="none" stroke="rgba(74,222,128,0.9)" stroke-width="1.5"/>
+        <text x="28" y="17" fill="rgba(74,222,128,0.95)" font-family="-apple-system,SF Pro Text" font-size="11" font-weight="600">3.2k</text>
+      </g>
+      <rect x="1060" y="4" width="32" height="32" rx="8" fill="rgba(255,255,255,0.06)"/>
+      <rect x="1100" y="4" width="32" height="32" rx="8" fill="rgba(255,255,255,0.06)"/>
+      <circle cx="1158" cy="20" r="16" fill="url(#brand)"/>
+    </g>
+
+    <g transform="translate(280, 80)">
+      <!-- Page area -->
+      <rect x="0" y="0" width="1360" height="930" rx="14" fill="#0B0B0F"/>
+
+      <!-- YouTube-ish thumbnail layout -->
+      <rect x="24" y="24" width="1312" height="620" rx="12" fill="#111" />
+      <g transform="translate(560, 280)">
+        <circle cx="40" cy="40" r="40" fill="rgba(255,0,0,0.9)"/>
+        <polygon points="30,22 62,42 30,62" fill="white"/>
+      </g>
+      <text x="48" y="704" fill="rgba(255,255,255,0.92)" font-family="-apple-system,SF Pro Display" font-size="28" font-weight="700">Led Zeppelin – Since I've Been Loving You</text>
+      <text x="48" y="736" fill="rgba(255,255,255,0.55)" font-family="-apple-system,SF Pro Text" font-size="15">Larissa Liveir   ·   221K views   ·   6 months ago</text>
+
+      <!-- Chips row -->
+      <g transform="translate(48, 770)" font-family="-apple-system,SF Pro Text" font-size="13">
+        <rect x="0" y="0" width="80" height="32" rx="16" fill="rgba(255,255,255,0.08)"/>
+        <text x="40" y="21" text-anchor="middle" fill="white">All</text>
+        <rect x="96" y="0" width="130" height="32" rx="16" fill="rgba(255,255,255,0.04)"/>
+        <text x="161" y="21" text-anchor="middle" fill="rgba(255,255,255,0.7)">Blues rock</text>
+        <rect x="240" y="0" width="110" height="32" rx="16" fill="rgba(255,255,255,0.04)"/>
+        <text x="295" y="21" text-anchor="middle" fill="rgba(255,255,255,0.7)">Guitar cover</text>
+      </g>
+    </g>
+  </g>
+</svg>
