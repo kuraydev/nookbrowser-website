@@ -75,30 +75,55 @@ nav.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 0 8px;
+  padding: 26px 0 10px;
 }
 nav.top .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  font-size: 15px;
+  gap: 12px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 24px -12px rgba(0, 0, 0, 0.55),
+    0 0 36px -14px rgba(255, 81, 136, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+nav.top .brand:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 32px -14px rgba(0, 0, 0, 0.6),
+    0 0 48px -12px rgba(255, 81, 136, 0.5);
 }
 nav.top .brand img {
-  width: 28px;
-  height: 28px;
-  border-radius: 7px;
-  box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.6);
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  box-shadow: 0 6px 14px -4px rgba(0, 0, 0, 0.6);
+}
+nav.top .brand span {
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  font-size: 16px;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 nav.top .links {
   display: flex;
-  gap: 22px;
+  gap: 26px;
 }
 nav.top a {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
   transition: color 120ms ease;
 }
 nav.top a:hover { color: var(--text-primary); }
@@ -478,31 +503,55 @@ kbd {
 /* ─── waitlist form ─── */
 
 .waitlist-form {
+  position: relative;
   display: flex;
-  gap: 10px;
-  max-width: 440px;
+  align-items: center;
+  gap: 8px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 6px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--card-stroke);
-  border-radius: 14px;
+  padding: 7px 7px 7px 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
+    rgba(10, 13, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  box-shadow:
+    0 14px 36px -16px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.waitlist-form:focus-within {
+  border-color: rgba(255, 81, 136, 0.55);
+  box-shadow:
+    0 14px 36px -16px rgba(0, 0, 0, 0.55),
+    0 0 0 4px rgba(255, 81, 136, 0.12);
 }
 .waitlist-form input[type="email"] {
   flex: 1;
   min-width: 0;
-  padding: 10px 14px;
+  padding: 12px 8px 12px 16px;
   background: transparent;
   border: 0;
   outline: none;
   color: var(--text-primary);
   font: inherit;
-  font-size: 14.5px;
+  font-size: 15px;
+  letter-spacing: -0.005em;
 }
 .waitlist-form input[type="email"]::placeholder {
   color: var(--text-tertiary);
+  opacity: 0.8;
 }
-.waitlist-form button {
+.waitlist-form .btn {
   flex-shrink: 0;
+  padding: 11px 20px;
+  font-size: 14px;
+  border-radius: 999px;
+}
+.waitlist-form .btn.big {
+  padding: 12px 22px;
+  font-size: 14.5px;
+  border-radius: 999px;
 }
 .sr-only {
   position: absolute;
@@ -517,7 +566,19 @@ kbd {
 }
 
 @media (max-width: 520px) {
-  .waitlist-form { flex-direction: column; }
+  .waitlist-form {
+    flex-direction: column;
+    border-radius: 18px;
+    padding: 10px;
+    align-items: stretch;
+  }
+  .waitlist-form input[type="email"] { padding: 12px 16px; }
+  .waitlist-form .btn,
+  .waitlist-form .btn.big {
+    width: 100%;
+    justify-content: center;
+    border-radius: 12px;
+  }
 }
 
 /* ─── footer ─── */
