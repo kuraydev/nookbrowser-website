@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nook — The cozy Mac browser</title>
+  <meta name="description" content="A cozy Arc-inspired browser for macOS. Spaces, split view, per-site shield, live tab previews, AI tab names. Beta — expect rough edges." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Nook — The cozy Mac browser" />
+  <meta property="og:description" content="Arc-inspired, made for Mac. Spaces, split view, per-site shield. Beta is live." />
+  <meta property="og:image" content="screenshots/home.png" />
+  <meta name="theme-color" content="#0A0D1E" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <div class="container">
+    <nav class="top">
+      <div class="brand">
+        <img src="icon.png" alt="Nook" />
+        <span>Nook</span>
+      </div>
+      <div class="links">
+        <a href="#features">Features</a>
+        <a href="#beta">Beta</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/kuraydev/nook" target="_blank" rel="noreferrer noopener">GitHub</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="beta-chip" aria-label="Beta release">
+        <span class="dot"></span>
+        Public Beta · 0.1
+      </div>
+      <h1>
+        A cozy Mac browser<br />
+        <span class="grad">for the way you actually browse.</span>
+      </h1>
+      <p class="sub">
+        Spaces, split view, per-site shield, live tab previews, and a
+        fuzzy command palette that finds anything. Built on Chromium
+        so every site just works. Native to macOS, made for your Mac.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#download">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path fill="currentColor" d="M17.6 12.7a4.3 4.3 0 0 1 2-3.6 4.4 4.4 0 0 0-3.5-1.9c-1.5-.1-2.9.9-3.7.9-.8 0-2-.9-3.2-.9a4.6 4.6 0 0 0-3.9 2.4c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.8 2.4 3 2.3 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.7c1.3 0 2.2-1.2 3-2.3.6-.9 1.2-2 1.4-3.1a4.2 4.2 0 0 1-2.7-4.0Zm-2.5-7.2a4.1 4.1 0 0 0 1-3 4.2 4.2 0 0 0-2.7 1.4 3.9 3.9 0 0 0-1 2.9 3.4 3.4 0 0 0 2.7-1.3Z"/>
+          </svg>
+          Download for Mac
+        </a>
+        <a class="btn outline" href="#features">See what's in it</a>
+      </div>
+      <div class="meta-row">
+        <span>macOS 13+ (Ventura or newer)</span>
+        <span class="dot-sep"></span>
+        <span>Apple Silicon &amp; Intel</span>
+        <span class="dot-sep"></span>
+        <span>Free during beta</span>
+      </div>
+    </header>
+  </div>
+
+  <section class="hero-shot-wrap">
+    <div class="container">
+      <figure class="window shot-hero">
+        <img src="screenshots/home.png"
+             alt="Nook browser showing spaces, sidebar, and a live tab"
+             width="1780" height="1160"
+             loading="eager" decoding="async" fetchpriority="high" />
+      </figure>
+      <div class="hero-stats">
+        <div class="stat"><strong>6</strong><span>spaces, yours to shape</span></div>
+        <div class="stat"><strong>⌘K</strong><span>fuzzy everything</span></div>
+        <div class="stat"><strong>⌘⌥\</strong><span>split view</span></div>
+        <div class="stat"><strong>0</strong><span>trackers, by default</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="showcase-intro" id="features">
+      <div class="section-label">The parts you'll use every day</div>
+      <h2>A browser that respects your attention.</h2>
+      <p class="lede">Small things that add up — the difference between a Chromium reskin and a tool that feels like home.</p>
+    </section>
+
+    <section class="showcase">
+      <div class="showcase-row">
+        <div class="showcase-copy">
+          <div class="chip chip-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9 9v11"/></svg>
+            Spaces
+          </div>
+          <h3>Life in tabs,<br />not chaos in tabs.</h3>
+          <p>Separate contexts for work, side projects, research, and the rabbit holes you're not proud of. Each space has its own color, icon, gradient theme, and auto-sleep policy. Switch with <kbd>⌘⌃1–6</kbd>; drag pills to reorder.</p>
+          <ul class="pills">
+            <li>Up to 6 spaces</li><li>Per-space themes</li><li>Aggressive auto-sleep</li><li>Drag-reorder</li>
+          </ul>
+        </div>
+        <figure class="window">
+          <img src="screenshots/spaces.png" alt="Space switcher at the bottom of the sidebar with colored pills" width="1780" height="1160" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+
+      <div class="showcase-row reverse">
+        <div class="showcase-copy">
+          <div class="chip chip-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+            Shield
+          </div>
+          <h3>Ads, trackers, and cookie<br />banners — gone.</h3>
+          <p>Ghostery's filter lists running in-process at the network layer. EasyList + EasyPrivacy + Fanboy cookie banners. Per-site pause when a page needs it. A live counter in the toolbar shows what you're not loading.</p>
+          <ul class="pills">
+            <li>EasyList</li><li>EasyPrivacy</li><li>Cookie banners</li><li>Per-site exceptions</li>
+          </ul>
+        </div>
+        <figure class="window">
+          <img src="screenshots/shield.png" alt="Shield popover with blocked request stats and per-site toggle" width="1780" height="1160" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+
+      <div class="showcase-row">
+        <div class="showcase-copy">
+          <div class="chip chip-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            Command Palette
+          </div>
+          <h3>One shortcut,<br />everything at once.</h3>
+          <p><kbd>⌘K</kbd> opens a fuzzy search across actions, open tabs, history, bookmarks, and settings. Type a few letters — arrow keys navigate, Enter activates. No context switching, no menu hunting.</p>
+          <ul class="pills">
+            <li>Fuzzy match</li><li>Switch to open tab</li><li>Jump to settings</li><li>Bookmarks &amp; history</li>
+          </ul>
+        </div>
+        <figure class="window">
+          <img src="screenshots/palette.png" alt="Command palette showing fuzzy-matched results across tabs and bookmarks" width="1780" height="1160" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+
+      <div class="showcase-row reverse">
+        <div class="showcase-copy">
+          <div class="chip chip-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/></svg>
+            Split view
+          </div>
+          <h3>Two tabs, one window.<br />Your docs next to your code.</h3>
+          <p>Pair any two tabs side-by-side with <kbd>⌘⌥\</kbd>. Real split panes — each tab keeps its own page, its own audio, its own everything. Close one side and the other takes the full width again.</p>
+          <ul class="pills">
+            <li>50/50 split</li><li>Independent audio</li><li>One shortcut to toggle</li>
+          </ul>
+        </div>
+        <figure class="window">
+          <img src="screenshots/split.png" alt="Split view with two browser panes side by side" width="1780" height="1160" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+
+      <div class="showcase-row">
+        <div class="showcase-copy">
+          <div class="chip chip-amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/></svg>
+            Live tab previews
+          </div>
+          <h3>Hover a tab.<br />See the tab.</h3>
+          <p>Every tab you've touched gets a live thumbnail. Hover in the sidebar, a card slides out with a fresh snapshot + title + URL. No more "which tab was that again?"</p>
+          <ul class="pills">
+            <li>Per-tab thumbnails</li><li>URL-keyed cache</li><li>200ms hover</li>
+          </ul>
+        </div>
+        <figure class="window">
+          <img src="screenshots/preview.png" alt="Hover preview card showing a thumbnail of a background tab" width="1780" height="1160" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <section class="disclaimer-wrap" id="beta">
+    <div class="container">
+      <div class="disclaimer">
+        <div class="disclaimer-badge">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v6M12 18h.01"/></svg>
+        </div>
+        <div class="disclaimer-body">
+          <h3>Heads up — this is a beta.</h3>
+          <p>
+            Nook is actively developed. Expect rough edges: occasional
+            layout quirks, a feature that only half-works, a site that
+            renders weirdly. The core browsing experience is solid, but
+            if something breaks, please tell us on GitHub instead of
+            uninstalling — every report makes the next build better.
+          </p>
+          <p>
+            Beta builds don't collect telemetry or usage data. Nothing
+            leaves your Mac unless you ask it to.
+          </p>
+          <div class="cta-row tight">
+            <a class="btn outline" href="https://github.com/kuraydev/nook/issues/new" target="_blank" rel="noreferrer noopener">Report a bug</a>
+            <a class="btn outline" href="https://github.com/kuraydev/nook" target="_blank" rel="noreferrer noopener">See the code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download-wrap" id="download">
+    <div class="container">
+      <div class="download-card">
+        <img src="icon.png" alt="" class="download-icon" aria-hidden="true" />
+        <h2>Ready to try?</h2>
+        <p class="lede">One DMG, signed &amp; notarized by Apple. Drag into Applications and launch — macOS handles the rest.</p>
+        <div class="cta-row">
+          <a class="btn primary big"
+             href="https://github.com/kuraydev/nook/releases/latest"
+             target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path fill="currentColor" d="M17.6 12.7a4.3 4.3 0 0 1 2-3.6 4.4 4.4 0 0 0-3.5-1.9c-1.5-.1-2.9.9-3.7.9-.8 0-2-.9-3.2-.9a4.6 4.6 0 0 0-3.9 2.4c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.8 2.4 3 2.3 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.7c1.3 0 2.2-1.2 3-2.3.6-.9 1.2-2 1.4-3.1a4.2 4.2 0 0 1-2.7-4.0Zm-2.5-7.2a4.1 4.1 0 0 0 1-3 4.2 4.2 0 0 0-2.7 1.4 3.9 3.9 0 0 0-1 2.9 3.4 3.4 0 0 0 2.7-1.3Z"/>
+            </svg>
+            Download Nook Beta
+          </a>
+        </div>
+        <div class="fineprint">
+          <span>macOS 13 Ventura or newer</span>
+          <span class="dot-sep"></span>
+          <span>Apple Silicon + Intel</span>
+          <span class="dot-sep"></span>
+          <span>≈ 120 MB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <div class="foot-left">
+        <img src="icon.png" alt="" aria-hidden="true" />
+        <span>Nook — a cozy Mac browser.</span>
+      </div>
+      <div class="foot-right">
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/kuraydev/nook" target="_blank" rel="noreferrer noopener">GitHub</a>
+        <a href="https://github.com/kuraydev/nook/releases" target="_blank" rel="noreferrer noopener">Releases</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
