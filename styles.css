@@ -622,6 +622,29 @@ kbd {
   }
 }
 
+.waitlist-status {
+  max-width: 480px;
+  margin: 14px auto 0;
+  min-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+.waitlist-status.ok,
+.waitlist-status.err {
+  opacity: 1;
+  transform: translateY(0);
+}
+.waitlist-status.ok {
+  color: #9fe5b2;
+}
+.waitlist-status.err {
+  color: #ff9fb8;
+}
+
 /* ─── footer ─── */
 
 footer {
