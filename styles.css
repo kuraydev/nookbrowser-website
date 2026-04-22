@@ -318,12 +318,15 @@ figure.window img {
 
 .showcase-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
+  grid-template-columns: 1fr;
+  gap: 28px;
   align-items: center;
-  padding: 44px 0;
+  padding: 28px 0;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
 }
-.showcase-row.reverse > .showcase-copy { order: 2; }
+.showcase-row.reverse > .showcase-copy { order: 0; }
 
 .showcase-copy h3 {
   font-size: clamp(28px, 3.4vw, 40px);
@@ -470,6 +473,51 @@ kbd {
   align-items: center;
   color: var(--text-tertiary);
   font-size: 12.5px;
+}
+
+/* ─── waitlist form ─── */
+
+.waitlist-form {
+  display: flex;
+  gap: 10px;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-stroke);
+  border-radius: 14px;
+}
+.waitlist-form input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 14.5px;
+}
+.waitlist-form input[type="email"]::placeholder {
+  color: var(--text-tertiary);
+}
+.waitlist-form button {
+  flex-shrink: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 520px) {
+  .waitlist-form { flex-direction: column; }
 }
 
 /* ─── footer ─── */

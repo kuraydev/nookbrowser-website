@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nook — The cozy Mac browser</title>
-  <meta name="description" content="A cozy Arc-inspired browser for macOS. Spaces, split view, per-site shield, live tab previews, AI tab names. Beta — expect rough edges." />
+  <title>Nook — A Mac browser built for the way you actually browse.</title>
+  <meta name="description" content="An Arc-inspired browser for macOS. Spaces, split view, per-site shield, live tab previews, AI tab names. Join the waitlist." />
   <link rel="icon" type="image/png" href="icon.png" />
   <link rel="apple-touch-icon" href="icon.png" />
   <link rel="stylesheet" href="styles.css" />
-  <meta property="og:title" content="Nook — The cozy Mac browser" />
-  <meta property="og:description" content="Arc-inspired, made for Mac. Spaces, split view, per-site shield. Beta is live." />
-  <meta property="og:image" content="screenshots/home.svg" />
+  <meta property="og:title" content="Nook — A Mac browser built for the way you actually browse." />
+  <meta property="og:description" content="Arc-inspired, made for Mac. Spaces, split view, per-site shield. Join the waitlist." />
+  <meta property="og:image" content="icon.png" />
   <meta name="theme-color" content="#0A0D1E" />
 </head>
 <body>
@@ -24,19 +24,18 @@
       </div>
       <div class="links">
         <a href="#features">Features</a>
-        <a href="#beta">Beta</a>
+        <a href="#waitlist">Waitlist</a>
         <a href="privacy.html">Privacy</a>
-        <a href="https://github.com/kuraydev/nook" target="_blank" rel="noreferrer noopener">GitHub</a>
       </div>
     </nav>
 
     <header class="hero">
-      <div class="beta-chip" aria-label="Beta release">
+      <div class="beta-chip" aria-label="Coming soon">
         <span class="dot"></span>
-        Public Beta · 0.1
+        Coming soon · Private beta
       </div>
       <h1>
-        A cozy Mac browser<br />
+        A Mac browser<br />
         <span class="grad">for the way you actually browse.</span>
       </h1>
       <p class="sub">
@@ -45,11 +44,11 @@
         so every site just works. Native to macOS, made for your Mac.
       </p>
       <div class="cta-row">
-        <a class="btn primary" href="#download">
+        <a class="btn primary" href="#waitlist">
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-            <path fill="currentColor" d="M17.6 12.7a4.3 4.3 0 0 1 2-3.6 4.4 4.4 0 0 0-3.5-1.9c-1.5-.1-2.9.9-3.7.9-.8 0-2-.9-3.2-.9a4.6 4.6 0 0 0-3.9 2.4c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.8 2.4 3 2.3 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.7c1.3 0 2.2-1.2 3-2.3.6-.9 1.2-2 1.4-3.1a4.2 4.2 0 0 1-2.7-4.0Zm-2.5-7.2a4.1 4.1 0 0 0 1-3 4.2 4.2 0 0 0-2.7 1.4 3.9 3.9 0 0 0-1 2.9 3.4 3.4 0 0 0 2.7-1.3Z"/>
+            <path fill="currentColor" d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 2v.4l8 5 8-5V8H4Zm0 2.35V16h16v-5.65l-7.46 4.66a1 1 0 0 1-1.08 0L4 10.35Z"/>
           </svg>
-          Download for Mac
+          Join the waitlist
         </a>
         <a class="btn outline" href="#features">See what's in it</a>
       </div>
@@ -62,23 +61,6 @@
       </div>
     </header>
   </div>
-
-  <section class="hero-shot-wrap">
-    <div class="container">
-      <figure class="window shot-hero">
-        <img src="screenshots/home.svg"
-             alt="Nook browser showing spaces, sidebar, and a live tab"
-             width="1780" height="1160"
-             loading="eager" decoding="async" fetchpriority="high" />
-      </figure>
-      <div class="hero-stats">
-        <div class="stat"><strong>6</strong><span>spaces, yours to shape</span></div>
-        <div class="stat"><strong>⌘K</strong><span>fuzzy everything</span></div>
-        <div class="stat"><strong>⌘⌥\</strong><span>split view</span></div>
-        <div class="stat"><strong>0</strong><span>trackers, by default</span></div>
-      </div>
-    </div>
-  </section>
 
   <div class="container">
     <section class="showcase-intro" id="features">
@@ -100,9 +82,6 @@
             <li>Up to 6 spaces</li><li>Per-space themes</li><li>Aggressive auto-sleep</li><li>Drag-reorder</li>
           </ul>
         </div>
-        <figure class="window">
-          <img src="screenshots/spaces.svg" alt="Space switcher at the bottom of the sidebar with colored pills" width="1780" height="1160" loading="lazy" decoding="async" />
-        </figure>
       </div>
 
       <div class="showcase-row reverse">
@@ -117,9 +96,6 @@
             <li>EasyList</li><li>EasyPrivacy</li><li>Cookie banners</li><li>Per-site exceptions</li>
           </ul>
         </div>
-        <figure class="window">
-          <img src="screenshots/shield.svg" alt="Shield popover with blocked request stats and per-site toggle" width="1780" height="1160" loading="lazy" decoding="async" />
-        </figure>
       </div>
 
       <div class="showcase-row">
@@ -134,9 +110,6 @@
             <li>Fuzzy match</li><li>Switch to open tab</li><li>Jump to settings</li><li>Bookmarks &amp; history</li>
           </ul>
         </div>
-        <figure class="window">
-          <img src="screenshots/palette.svg" alt="Command palette showing fuzzy-matched results across tabs and bookmarks" width="1780" height="1160" loading="lazy" decoding="async" />
-        </figure>
       </div>
 
       <div class="showcase-row reverse">
@@ -151,9 +124,6 @@
             <li>50/50 split</li><li>Independent audio</li><li>One shortcut to toggle</li>
           </ul>
         </div>
-        <figure class="window">
-          <img src="screenshots/split.svg" alt="Split view with two browser panes side by side" width="1780" height="1160" loading="lazy" decoding="async" />
-        </figure>
       </div>
 
       <div class="showcase-row">
@@ -168,9 +138,6 @@
             <li>Per-tab thumbnails</li><li>URL-keyed cache</li><li>200ms hover</li>
           </ul>
         </div>
-        <figure class="window">
-          <img src="screenshots/preview.svg" alt="Hover preview card showing a thumbnail of a background tab" width="1780" height="1160" loading="lazy" decoding="async" />
-        </figure>
       </div>
     </section>
   </div>
@@ -182,52 +149,63 @@
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v6M12 18h.01"/></svg>
         </div>
         <div class="disclaimer-body">
-          <h3>Heads up — this is a beta.</h3>
+          <h3>A few honest words.</h3>
           <p>
-            Nook is actively developed. Expect rough edges: occasional
-            layout quirks, a feature that only half-works, a site that
-            renders weirdly. The core browsing experience is solid, but
-            if something breaks, please tell us on GitHub instead of
-            uninstalling — every report makes the next build better.
+            Nook is still being shaped. The public beta is close but not
+            here yet — we're polishing the rough edges you'd otherwise
+            have to ignore. Join the waitlist and you'll be first in
+            line when the DMG goes out.
           </p>
           <p>
-            Beta builds don't collect telemetry or usage data. Nothing
-            leaves your Mac unless you ask it to — read the
-            <a href="https://github.com/kuraydev/nook/blob/main/SECURITY-AUDIT.md" target="_blank" rel="noreferrer noopener">full security audit</a>
-            or skim the <a href="privacy.html">privacy page</a> for the
-            short version.
+            No telemetry, no usage tracking, no email list beyond this
+            one. Nothing leaves your Mac unless you ask it to — the
+            <a href="privacy.html">privacy page</a> has the short
+            version.
           </p>
-          <div class="cta-row tight">
-            <a class="btn outline" href="https://github.com/kuraydev/nook/issues/new" target="_blank" rel="noreferrer noopener">Report a bug</a>
-            <a class="btn outline" href="https://github.com/kuraydev/nook" target="_blank" rel="noreferrer noopener">See the code</a>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="download-wrap" id="download">
+  <section class="download-wrap" id="waitlist">
     <div class="container">
       <div class="download-card">
         <img src="icon.png" alt="" class="download-icon" aria-hidden="true" />
-        <h2>Ready to try?</h2>
-        <p class="lede">One DMG, signed &amp; notarized by Apple. Drag into Applications and launch — macOS handles the rest.</p>
-        <div class="cta-row">
-          <a class="btn primary big"
-             href="https://github.com/kuraydev/nook/releases/latest"
-             target="_blank" rel="noreferrer noopener">
+        <h2>Be first when the beta opens.</h2>
+        <p class="lede">One email, one heads-up when the DMG is ready to hand out. No newsletter, no drip campaign. You'll hear from us exactly once.</p>
+        <!--
+          Replace the action URL below with your own form endpoint
+          (Formspree, Tally, Getform, Buttondown, etc.). The mailto
+          fallback keeps the button useful until you wire a service up.
+        -->
+        <form
+          class="waitlist-form"
+          action="mailto:kurayogun@gmail.com?subject=Nook%20waitlist"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label class="sr-only" for="waitlist-email">Email address</label>
+          <input
+            id="waitlist-email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            placeholder="you@domain.com"
+          />
+          <button class="btn primary big" type="submit">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path fill="currentColor" d="M17.6 12.7a4.3 4.3 0 0 1 2-3.6 4.4 4.4 0 0 0-3.5-1.9c-1.5-.1-2.9.9-3.7.9-.8 0-2-.9-3.2-.9a4.6 4.6 0 0 0-3.9 2.4c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.8 2.4 3 2.3 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.7c1.3 0 2.2-1.2 3-2.3.6-.9 1.2-2 1.4-3.1a4.2 4.2 0 0 1-2.7-4.0Zm-2.5-7.2a4.1 4.1 0 0 0 1-3 4.2 4.2 0 0 0-2.7 1.4 3.9 3.9 0 0 0-1 2.9 3.4 3.4 0 0 0 2.7-1.3Z"/>
+              <path fill="currentColor" d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 2v.4l8 5 8-5V8H4Zm0 2.35V16h16v-5.65l-7.46 4.66a1 1 0 0 1-1.08 0L4 10.35Z"/>
             </svg>
-            Download Nook Beta
-          </a>
-        </div>
+            Join waitlist
+          </button>
+        </form>
         <div class="fineprint">
           <span>macOS 13 Ventura or newer</span>
           <span class="dot-sep"></span>
           <span>Apple Silicon + Intel</span>
           <span class="dot-sep"></span>
-          <span>≈ 120 MB</span>
+          <span>Unsubscribe any time</span>
         </div>
       </div>
     </div>
@@ -237,12 +215,11 @@
     <div class="container footer-row">
       <div class="foot-left">
         <img src="icon.png" alt="" aria-hidden="true" />
-        <span>Nook — a cozy Mac browser.</span>
+        <span>Nook — a Mac browser.</span>
       </div>
       <div class="foot-right">
         <a href="privacy.html">Privacy</a>
-        <a href="https://github.com/kuraydev/nook" target="_blank" rel="noreferrer noopener">GitHub</a>
-        <a href="https://github.com/kuraydev/nook/releases" target="_blank" rel="noreferrer noopener">Releases</a>
+        <a href="#waitlist">Waitlist</a>
       </div>
     </div>
   </footer>
