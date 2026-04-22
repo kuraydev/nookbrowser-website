@@ -578,3 +578,16 @@ article.privacy .foot-note {
   color: var(--text-tertiary);
   font-size: 13px;
 }
+
+/* Inline links inside the disclaimer + footers pick up a soft pink
+ * underline so they read as links without screaming at the user. */
+.disclaimer p a {
+  color: #ffb3c8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 179, 200, 0.35);
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.disclaimer p a:hover {
+  color: #ffe4ee;
+  border-bottom-color: rgba(255, 179, 200, 0.7);
+}

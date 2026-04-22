@@ -1,0 +1,65 @@
+name: Stamp Nook version
+
+# When a new release is published in the kuraydev/nook app repo,
+# this workflow fetches the tag and commits a VERSION file + updates
+# the download button's href to the specific version (so users get
+# a stable asset URL instead of just "latest").
+#
+# Setup:
+# 1. Create a PAT at github.com/settings/tokens with `repo` scope.
+# 2. In this repo → Settings → Secrets and variables → Actions →
+#    new secret "NOOK_REPO_PAT" with the PAT value.
+# 3. In the kuraydev/nook repo → Settings → Webhooks → add a webhook:
+#    - URL: https://api.github.com/repos/kuraydev/nookbrowser-website/dispatches
+#    - Events: Releases
+#    - (or use the workflow_run approach below — simpler)
+#
+# Simpler alternative: this workflow polls every hour via schedule.
+# No webhook config needed.
+
+on:
+  schedule:
+    # Every hour; GitHub schedules can drift a few minutes.
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest Nook release
+        id: fetch
+        run: |
+          latest=$(curl -sSf \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/kuraydev/nook/releases/latest \
+            | jq -r '.tag_name // empty')
+          if [ -z "$latest" ]; then
+            echo "No release found — skipping."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          current=$(cat VERSION 2>/dev/null || echo "none")
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          if [ "$latest" = "$current" ]; then
+            echo "Already on $latest."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Updating $current → $latest"
+            echo "$latest" > VERSION
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit + push if changed
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add VERSION
+          git commit -m "Stamp Nook ${{ steps.fetch.outputs.latest }}"
+          git push
