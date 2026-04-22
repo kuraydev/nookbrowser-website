@@ -30,18 +30,25 @@ Static site for the Nook beta landing + privacy policy.
 2. Deploy to GitHub Pages OR Cloudflare Pages pointing the subdomain
    at the repo.
 
-## Screenshots to capture
+## Screenshots
 
-Open the Nook app and take clean 1780×1160 screenshots of:
+Ships with stylized SVG mockups (`home.svg`, `spaces.svg`,
+`shield.svg`, `palette.svg`, `split.svg`, `preview.svg`) so the site
+deploys with visuals from the start. SVGs scale cleanly and render
+crisp at any size.
 
-- **home.png** — fresh tab, Claude or whatever, sidebar open with
-  a space pill row at the bottom
-- **spaces.png** — space menu open (right-click a pill) showing
-  the theme picker or color palette
-- **shield.png** — shield popover open on a site with stats
-- **palette.png** — ⌘K command palette with results
-- **split.png** — split view with two tabs side-by-side
-- **preview.png** — hover preview card over a background tab
+### Swapping in real captures
 
-All PNGs should be 1780×1160 to match the `width`/`height` attrs in
-index.html (Retina, crisp on 2x DPR).
+1. Open the Nook app and take clean 1780×1160 screenshots of:
+   - **home** — fresh tab, Claude or whatever, sidebar open with a
+     space pill row at the bottom
+   - **spaces** — space menu open (right-click a pill) with the
+     theme / color picker visible
+   - **shield** — shield popover open on a site with live stats
+   - **palette** — ⌘K command palette with fuzzy results
+   - **split** — split view with two tabs side-by-side
+   - **preview** — hover preview card over a background tab
+2. Save as PNG at 1780×1160 (exactly matches the `width`/`height`
+   attrs in `index.html`; Retina-crisp at 2× DPR).
+3. Replace either the SVG file (keep the name `home.svg` etc.) or
+   rename to `.png` and `sed -i '' 's|.svg"|.png"|g' index.html`.
